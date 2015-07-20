@@ -8,5 +8,8 @@ puts "Title is: #{browser.title}"
 
 #quotes validation
 quotes = browser.find_element(:id, "id_quotes")
-puts "Quote is dysplayed: #{quotes.displayed?}"
-puts "Quote is: #{quotes.to_s}"
+puts "Quote is #{quotes.text}"
+puts "Quote size: #{quotes.size}"
+puts "Quote location: #{quotes.location}"
+
+browser.quit
